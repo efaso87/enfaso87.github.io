@@ -1,0 +1,614 @@
+/*
+Emily Faso
+12-12-2024
+Advanced JavaScript Final Project
+style.css file
+*/
+
+/* reset all previous styling for page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling for body */
+body {
+    /* change font-family to 'Franklin Gothic Medium' sans-serif */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* change background color to a light tan */
+    background-color: #fff2e8;
+    /* change text font color to a dark grey */
+    color: #535b63;
+    /* change line-height to 1.5 */
+    line-height: 1.5;
+    min-height: 100vh;
+    /* use a flex display to format in columns */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* styling for header */
+header {
+    /* make background color a light blue */
+    background-color: #d6eaff;
+    /* make text font color to a dark grey */
+    color: #535b63;
+    /* add 30px padding */
+    padding: 30px;
+    /* align text to center */
+    text-align: center;
+    /* add grey colored box shadow for better styling/contrast */
+    box-shadow: 0 1px 6px #00000028;
+}
+
+.item-maintenance-page {
+    border: 1px dotted #21c1a1;
+    width: fit-content;
+    align-self: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+/* styling for h1 text within shopping-cart-header class */
+.shopping-cart-header h1 {
+    /* make font size 40px */
+    font-size: 40px;
+    /* add 2px letter spacing */
+    letter-spacing: 2px;
+}
+
+/* styling for h1 text within header-spacing class */
+.header-spacing h1 {
+    /* change font size */
+    font-size: 40px;
+    /* align texts to center */
+    text-align: center;
+    margin: 40px 0 20px;
+    /* make text font color blue */
+    color: #4a90e2;
+    /* make text uppercase for formatting/design purposes */
+    text-transform: uppercase;
+    /* add a 2px space between letters */
+    letter-spacing: 2px;
+    margin-top: 150px;
+}
+
+/* styling for p text within header-spacing class */
+.header-spacing p {
+    /* align text to center */
+    text-align: center;
+}
+
+/* styling for ul elements*/
+ul {
+    list-style-type: none;
+    /* use a flex display formatting in a column*/
+    display: flex;
+    flex-direction: column;
+    /* align items to the center*/
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* styling for li elements */
+li {
+    /* add specific margin */
+    margin: 10px 0;
+}
+
+/* styling for links */
+a {
+    /* remove any text decoration */
+    text-decoration: none;
+    font-size: 20px;
+    /* make text font color white */
+    color: #ffffff;
+    /* add blue background color to links */
+    background-color: #4a90e2;
+    padding: 12px 25px;
+    /* add a 5px border radius */
+    border-radius: 5px;
+    /* add a light grey box shadow */
+    box-shadow: 0 4px 6px #0000001a; 
+}
+
+/* styling for links when they are hovered over */
+a:hover {
+    /* use darker shade of blue when hovered over */
+    background-color: #3b7cc1;
+    /* add a grey box shadow slightly darker when hovered over than regular link box shadow */
+    box-shadow: 0 6px 10px #09090933;
+}
+
+/* styling for filters */
+#filters {
+    /* add 15px margin-top to filters */
+    margin-top: 15px;
+    /* create flex box for layout purposes */
+    display: flex;
+    /* center items horizontally */
+    justify-content: center;
+    /* add a 20px gap between them */
+    gap: 20px;
+}
+
+/* styling for filter labels */
+#filters label {
+    /* make the font bold */
+    font-weight: bold;
+    /* make text font color to a slightly lighter grey than the h1 header */
+    color: #79828b;
+}
+
+/* styling for the filter select dropdown */
+#filters select {
+    /* add a 10px 15px padding */
+    padding: 10px 15px;
+    /* make font-size 15px */
+    font-size: 15px;
+    /* add a 1px solid grey color */
+    border: 1px solid #bdc3c7;
+    /* add a 5px border-radius */
+    border-radius: 5px;
+    /* make background color a very white / light blue tinted shade */
+    background-color: #ecf0f1;
+}
+
+/* styling for the filter select dropdown when its hovered over */
+#filters select:hover {
+    /* make background color a slighter dark shade of the white/blue it currently is */
+    background-color: #dfe6e9;
+}
+
+/* styling for main section */
+main {
+    /* use a flex box for layout of content in main section */
+    display: flex;
+    /* space between content so they're evenly spaced out */
+    justify-content: space-between;
+    /* add 50px padding */
+    padding: 50px;
+    /* add a 30px gap */
+    gap: 30px;
+    flex: 1;
+}
+
+/* styling for item list */
+#item-list {
+    /* use remaining space for flex box */
+    flex: 1;
+    width: fit-content;
+    align-self: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px dotted #21c1a1;
+}
+
+.items-for-sale-text {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    color: #535b63;
+}
+
+/* styling for items container */
+#items-container {
+    /* use a grid display for the items */
+    display: grid;
+    /* make items align in 3 column form */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* add a 20px gap between them */
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* styling for item class */
+.item {
+    /* change background color to white */
+    background-color: #ffffff;
+    /* add a 20px padding */
+    padding: 20px;
+    /* add an 8px border radius */
+    border-radius: 8px;
+    /* align text to center */
+    text-align: center;
+    /* add grey colored box shadow for better styling/contrast */
+    box-shadow: 0 1px 3px #00000028;
+    /* change cursor to pointer */
+    cursor: pointer;
+}
+
+/* styling for item class when hovered over */
+.item:hover {
+    /* add a slightly larger grey colored box shadow for better styling/contrast and to to emphasize box being hovered over */
+    box-shadow: 0 8px 15px #00000028;
+}
+
+/* styling for item class for strong fonts */
+.item strong {
+    /* make font-size 20px */
+    font-size: 20px;
+    /* make text color a navy blue */
+    color: #34495e;
+}
+
+/* styling for p text within item class */
+.item p {
+    /* add a 10px margin-top */
+    margin-top: 10px;
+    /* make color a light grey shade */
+    color: #7f8c8d;
+}
+
+/* styling for price class within item class (total price) */
+.item .price {
+    /* make font-size 18px */
+    font-size: 18px;
+    /* change color to red so it attracts users eye */
+    color: #e74c3c;
+}
+
+/* styling for shopping cart */
+#shopping-cart {
+    /* set fixed height for flex box */
+    flex: 0 0 300px;
+    /* set background color to white */
+    background-color: #ffffff;
+    /* add a 20px padding */
+    padding: 20px;
+    /* add an 8px border radius */
+    border-radius: 8px;
+    /* add grey colored box shadow for better styling/contrast */
+    box-shadow: 0 5px 10px #00000028;
+}
+
+/* styling for shopping cart container */
+#cart-container {
+    /* add a 1px solid gray border for cart container */
+    border: 1px solid #c6cdd2;
+    /* assign a 200px minimum height for container */
+    min-height: 200px;
+    /* add a 15px padding */
+    padding: 15px;
+    /* add a slightly off white light blue tinted background to container */
+    background-color: #f1f4f6;
+    /* add a 20px margin-bottom */
+    margin-bottom: 20px;
+    /* use a flex box for layout of container */
+    display: flex;
+    /* wrap items in container */
+    flex-wrap: wrap;
+    /* add a 15px gap between elements/items in cart */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* styling for cart item class */
+.cart-item {
+    /* make background color solid white */
+    background-color: #ffffff;
+    /* add 15px padding */
+    padding: 15px;
+    /* add an 8px border radius */
+    border-radius: 8px;
+    /* make width 200px */
+    width: 200px;
+    /* align text to center */
+    text-align: center;
+    /* add grey colored box shadow for better styling/contrast */
+    box-shadow: 0 1px 3px #00000028;
+    /* assing cursor to move so it shows it is able to be dragged */
+    cursor: move;
+}
+
+/* styling for cart item class when hovered over */
+.cart-item:hover {
+    /* add grey colored box shadow for better styling/contrast */
+    box-shadow: 0 3px 10px #00000028;
+}
+
+/* styling for paragraph text within cart item class */
+.cart-item p {
+    /* change font-size to 17px */
+    font-size: 17px;
+    /* add 10px to margin bottom */
+    margin-bottom: 10px;
+    /* change color to navy blue */
+    color: #34495e;
+}
+
+/* styling for cart total */
+#cart-total {
+    /* change font-size to 23px */
+    font-size: 23px;
+    /* make font bold */
+    font-weight: bold;
+    /* change color to red */
+    color: #e74c3c;
+    /* add 20px to margin-top */
+    margin-top: 20px;
+}
+
+/* styling for footer */
+footer {
+    /* align text to center */
+    text-align: center;
+    /* add 30px to margin-top */
+    margin-top: 30px;
+}
+
+/* styling for finalize order button */
+#finalize-order {
+    /* make finalize order button blue */
+    background-color: #3999d9;
+    /* make text color solid white */
+    color: #ffffff;
+    /* add a 15px 30px padding to button */
+    padding: 15px 30px;
+    /* add a 5px border-radius */
+    border-radius: 5px;
+    /* add a 19px font size */
+    font-size: 19px;
+    /* change cursor to pointer */
+    cursor: pointer;
+}
+
+/* styling for finalize order button when hovered over */
+#finalize-order:hover {
+    /* make background color a slightly darker blue than the original button color */
+    background-color: #297fb8;
+}
+
+/* styling for button */
+button {
+    /* add 10px 20px padding to button */
+    padding: 10px 20px;
+    /* add 10px to margin-top */
+    margin-top: 10px;
+    /* add 18ox font size */
+    font-size: 18px;
+    /* change cursor to pointer */
+    cursor: pointer;
+    /* make background color a light green */
+    background-color: #21c1a1;
+    /* change text color to white */
+    color: #ffffff;
+    /* remove border from button */
+    border: none;
+    /* add 5px border-radius */
+    border-radius: 5px;
+}
+
+div#back-to-index-page-btn, div#back-to-shopping-cart-btn, div#back-to-index-page-btn {
+    margin-left: 10px;
+}
+
+div#back-to-shopping-cart-btn {
+    align-self: center;
+}
+
+div#back-to-index-page-btn {
+    margin-bottom: 5px;
+}
+
+/* styling for button when hovered over */
+button:hover {
+    /* make background color a slightly darker green than the original green button color */
+    background-color: #159f84;
+}
+
+/* styling for back-to-shopping-cart-btn class */
+.back-to-shopping-cart-btn {
+    width: fit-content;
+    /* use a flex display */
+    display: flex;
+    /* justify content to center */
+    justify-content: center;
+    /* align items center */
+    align-items: center;
+    /* add 20px to margin top */
+    margin-top: 20px;
+}
+
+/* styling for order details */
+#order-details {
+    /* assign max width to 80% */
+    max-width: 80%;
+    /* add 20px auto margin */
+    margin: 20px auto;
+    /* add 20px padding */
+    padding: 20px;
+    /* make background color white */
+    background-color: white;
+    /* add 8px border radius */
+    border-radius: 8px;
+    /* add a box shadow to make order details stand out more */
+    box-shadow: 0 4px 6px #dfe6e9;
+    /* make sure box doesn't overflow */
+    overflow-x: auto; 
+}
+
+/* styling for the order summary table class */
+.order-summary-table {
+    /* make width 100% */
+    width: 100%;
+    /* add border collapse element */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* styling for order summary table head and table data */
+.order-summary-table th, .order-summary-table td {
+    padding: 10px;
+    /* align text to left*/
+    text-align: left;
+    /* add borders */
+    border: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+
+/* styling for order summary table head specifically */
+.order-summary-table th {
+    /* change background color to slightly off white so it stands out */
+    background-color: #f2f2f2;
+    /* make font bold */
+    font-weight: bold;
+}
+
+/* styling for order summary table data specifically */
+.order-summary-table td {
+    /* change background color to white */
+    background-color: #ffffff;
+}
+
+/* styling for order summary and total row table data */
+.order-summary-table .total-row td {
+    /* make font bold with slightly off whtie background color */
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+/* styling for paragraph text within order details section */
+#order-details p {
+    /* align text to center */
+    text-align: center;
+    /* make font-size 20px */
+    font-size: 20px;
+}
+
+/* styling for back-to-cart button */
+#back-to-cart {
+    /* use inline block for display */
+    display: inline-block;
+    padding: 10px 20px;
+    /* make background color blue */
+    background-color: #007bff;
+    /* make text color white */
+    color: #ffffff;
+    /* remove any prior text decoration */
+    text-decoration: none;
+    /* add 5px border radius*/
+    border-radius: 5px;
+    font-size: 16px;
+    /* align text to center */
+    text-align: center;
+    margin: 20px auto;
+    /* use block display */
+    display: block;
+    /* assign width to auto so the background color fits the content in button */
+    width: auto;
+}
+
+/* styling for back-to-cart button when hovered over */
+#back-to-cart:hover {
+    /* background color dark blue */
+    background-color: #0056b3;
+}
+
+/* styling for total-row class */
+.total-row {
+    /* make font bold */
+    font-weight: bold;
+    /* make background color slightly off white */
+    background-color: #f9f9f9;
+}
+
+
+/* styling for h1 content within item-maintenance-page class */
+.item-maintenance-page h1 {
+    /* align text to center */
+    text-align: center;
+    /* add a 20px margin to top */
+    margin-top: 20px;
+    /* make font size 40px */
+    font-size: 40px;
+}
+
+/* styling for item-list-container class */
+.item-list-container {
+    /* use a flex box for layout of container */
+    display: flex;
+    /* wrap items in container */
+    flex-wrap: wrap;
+    /* add a 20px gap between them */
+    gap: 20px;
+    /* add 20px margin to the top */
+    margin-top: 20px;
+}
+
+/* styling for items in list */
+.item {
+    /* make background color white */
+    background-color: #ffffff;
+    /* assign padding to 15px */
+    padding: 15px;
+    /* add a 8px border radius */
+    border-radius: 8px;
+    /* make width 200px */
+    width: 200px;
+    /* align text to center */
+    text-align: center;
+    /* change cursor to pointer */
+    cursor: pointer;
+    /* adjust flexbox to fit all items nicely */
+    flex: 1 1 500px;
+}
+
+/* styling for items when hovered over */
+.item:hover {
+    /* add grey colored box shadow for better styling/contrast */
+    box-shadow: 0 3px 10px #00000028;
+}
+
+/* styling for h3 text within item class */
+.item h3 {
+    /* change text color to a navy blue */
+    color: #535b63;
+}
+
+/* styling for paragraph text within item class */
+.item p {
+    /* change text color to a grey */
+    color: #7f8c8d;
+}
+
+/* styling form item-form form content */
+form#item-form {
+    /* use a flex display */
+    display: flex;
+    /* display items to baseline in a column */
+    align-items: baseline;
+    flex-direction: column;
+    /* alignitems to center */
+    align-items: center;
+}
+
+/* styling for footer on all pages */
+footer {
+    /* align text to center */
+    text-align: center;
+    font-size: 16px;
+    /* make font color a darker grey */
+    color: #777777;
+    padding: 15px;
+}
+
+/* make web application responsive for all platforms and screen sizes */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #shopping-cart {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 30px;
+    }
+}

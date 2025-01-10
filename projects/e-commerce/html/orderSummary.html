@@ -1,0 +1,41 @@
+<!--
+Emily Faso
+12-12-2024
+Advanced JavaScript Final Project
+orderSummary.html file
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- create title for order summary HTML page -->
+    <title>Order Summary</title>
+    <!-- link stylesheet CSS file to HTML file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link shoppingCart.js JavaScript file to HTML file as a module type -->
+    <script type="module" src="../js/orderSummary.js"></script>
+
+</head>
+<!-- begin body section -->
+<body>
+    <div class="header-spacing">
+    <!-- use largest header tag (h1) -->
+    <h1>Order Summary</h1>
+    <p>Your order was successfully submitted.</p>
+    </div>
+    <!-- create new div id for order details called "order-details"-->
+    <div id="order-details"></div>
+    <!-- create new button called "Back to Shopping Cart" that when clicked returns user/customer back to the shopping cart and the shoppingCart.html page using window.location.href -->
+     <div id="back-to-shopping-cart-btn">
+    <button onclick="window.location.href='shoppingCart.html'">Back to Shopping Cart</button>
+    </div>
+
+</body>
+
+<!-- create footer section (copyright section) -->
+<footer>
+    <p>Copyright &copy; 2024 Emily Faso</p>
+</footer>
+</html>

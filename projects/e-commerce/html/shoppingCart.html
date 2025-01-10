@@ -1,0 +1,110 @@
+<!--
+Emily Faso
+12-12-2024
+Advanced JavaScript Final Project
+shoppingCart.html file
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- create title for shopping cart HTML page -->
+    <title>Shopping Cart - Application 2</title>
+    <!-- link stylesheet CSS file to HTML file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link shoppingCart.js JavaScript file to HTML file as a module type -->
+    <script type="module" src="../js/shoppingCart.js"></script>
+</head>
+<!-- begin body section -->
+<body>
+    <!-- begin header section -->
+    <header>
+        <div id="shopping-cart-header">
+        <!-- add largest header tag (h1) to introduce the e-commerce website -->
+        <h1>E-Commerce Website</h1>
+        </div>
+        <!-- create new div tag with id "filters" -->
+        <div id="filters">
+            <!-- create new "sort" label for sort drop down -->
+            <label for="sort">Sort By:</label>
+            <!-- create drop down for items with different criteria -->
+            <select id="sort">
+                <!-- use value 'priceAscending' for option that sorts items by their price, from low to high -->
+                <option value="priceAscending">Price: Low to High</option>
+                <!-- use value 'priceDescending' for option that sorts items by their price, from high to low -->
+                <option value="priceDescending">Price: High to Low</option>
+                <!-- use value 'nameAscending' for option that sorts items by their name, from A-Z -->
+                <option value="nameAscending">Name: A-Z</option>
+                <!-- use value 'nameDescending' for option that sorts items by their name, from Z-A -->
+                <option value="nameDescending">Name: Z-A</option>
+            </select>
+
+            <!-- create new "filter-category" label for filter drop down -->
+            <label for="filter-category">Filter By Category:</label>
+            <!-- create drop down for items with different categories -->
+            <select id="filter-category">
+                <!-- use value 'all' for option that displays all items -->
+                <option value="All">All</option>
+                <!-- use value "Candles" for option that displays all items with the "Candles" category -->
+                <option value="Candles">Candles</option>
+                <!-- use value "Accessories" for option that displays all items with the "Accessories" category -->
+                <option value="Accessories">Accessories</option>
+                <!-- use value "Clothing" for option that displays all items with the "Clothin" category -->
+                <option value="Clothing">Clothing</option>
+            </select>
+
+            <!-- create new "filter-price" label for filter drop down #2 -->
+            <label for="filter-price">Filter by Price:</label>
+            <!-- create drop down for items with different categories -->
+            <select id="filter-price">
+                <!-- use value 'All' for option that displays all prices -->
+                <option value="All">All Prices</option>
+                <!-- use value "lessThan50" for option that displays all items less than $50-->
+                <option value="lessThan50">Less than $50</option>
+                <!-- use value "50to99" for option that displays all items between $50 and $99 -->
+                <option value="50to99">$50-$99</option>
+                <!-- use value "greaterThan100" for option that displays all items greater than $100-->
+                <option value="greaterThan100">$100+</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- begin main section -->
+    <main>
+        <!-- create new section and id for item list -->
+        <section id="item-list">
+            <!-- use second largest header tag to advertise items for sale -->
+            <h2 class="items-for-sale-text">Items for Sale:</h2>
+            <!-- create new dig tag for item container -->
+            <div id="items-container">
+                <!-- display all items for sale here using JavaScript to be imported to HTML -->
+            </div>
+        </section>
+
+        <!-- create new section and id for shopping cart -->
+        <section id="shopping-cart">
+            <!-- use second largest header tag to represent where the shopping cart is -->
+            <h2>Your Shopping Cart</h2>
+            <!-- create new div id for cart container that allows the drag and drop events -->
+            <div id="cart-container" ondragover="allowDrop(event)" ondrop="dropItem(event)">
+                <!-- display all cart items here using JavaScript to be imported to HTML -->
+            </div>
+            <!-- use paragraph tag to display cart total price (initially start at $0.00 and increase as items are added using JavaScript)-->
+            <p>Total: <span id="cart-total">0.00</span></p>
+            <!-- add button with id for finalize order, allowing user to place order/finalize order when clicked -->
+            <button id="finalize-order">Place Order</button>
+        </section>
+    </main>
+
+    <!-- create new button called "Back to Main Page" that when clicked returns user back to the main page featuring both applications using window.location.href -->
+    <div id="back-to-index-page-btn">
+    <button onclick="window.location.href='../index.html'">Back to Main Page</button>
+    </div>
+    <!-- create footer section (copyright section) -->
+    <footer>
+        <p>Copyright &copy; 2024 Emily Faso</p>
+    </footer>
+</body>
+</html>

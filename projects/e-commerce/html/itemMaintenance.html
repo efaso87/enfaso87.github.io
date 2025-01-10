@@ -1,0 +1,59 @@
+<!--
+Emily Faso
+12-12-2024
+Advanced JavaScript Final Project
+itemMaintenance.html file
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- create title for item maintenance HTML page -->
+        <title>Item Maintenance</title>
+        <!-- link stylesheet CSS file to HTML file -->
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- link itemMaintenance.js JavaScript file to HTML file as a module type -->
+        <script type="module" src="../js/itemMaintenance.js"></script>
+    </head>
+    <!-- begin body section -->
+    <body>
+        <!-- create div class for item maintenance page to edit strictly this html file/webpage -->
+        <div class="item-maintenance-page">
+            <h1>Item Maintenance</h1>
+                <!-- create new form with item form class with novalidate attribute to turn off browser validation -->
+                <form id="item-form" novalidate>
+                    <!-- add h2 text to prompt users to add or update items while using the item maintenance page-->
+                    <h2>Add or Update Items</h2>
+                    <!-- create label for item id and make it "readonly" so it cannot be typed in and just automatically adds the next id number -->
+                    <label for="item-id">ID:</label>
+                    <input type="number" id="item-id" required>
+                    <!-- create label for item name and make sure it is required-->
+                    <label for="item-name">Name:</label>
+                    <input type="text" id="item-name" required>
+                    <!-- create label for item category and make sure it is required-->
+                    <label for="item-category">Category:</label>
+                    <input type="text" id="item-category" required>
+                    <!-- create label for item name and make sure it is required as well as set up with the correct amount of decimal points / correct format -->
+                    <label for="item-price">Price:</label>
+                    <input type="number" id="item-price" step="0.01" required>
+                    <!-- create label for item quantity and make sure it is required-->
+                    <label for="item-quantity">Quantity:</label>
+                    <input type="number" id="item-quantity" required>
+                    <!-- create label for item description and make sure it is required-->
+                    <label for="item-description">Description:</label>
+                    <input type="text" id="item-description" required>
+                    <!-- create submit button that allows users to save the newly added item, make sure it has an id on it -->
+                    <button type="submit" id="submit-button">Save Item</button>
+                    <!-- create reset button that allows users to reset the item maintence form -->
+                    <button type="reset" id="reset-items">Reset</button>
+                </form>
+            </div>
+            <!-- create new div tag with id item list and inside the item list container -->
+            <div id="item-list" class="item-list-container"></div>
+            <!-- create new button called "Back to Main Page" that when clicked returns user back to the main page featuring both applications using window.location.href -->
+            <div id="back-to-index-page-btn">
+            <button onclick="window.location.href='../index.html'">Back to Main Page</button>
+            </div>
+    </body>
+</html>

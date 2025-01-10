@@ -1,0 +1,49 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #ffd6e0;
+    color: #7d5a82;
+}
+
+h1 {
+    color: #ff85a2;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+#pet-container {
+    padding: 20px;
+    border: 2px solid #ff85a2;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #fff8f7;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#generate-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff85a2;
+    color: #fff8f7;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#generate-btn:hover {
+    background-color: #ff5e78;
+}
+
+#pet-gif {
+    display: none;
+    max-width: 100%;
+    margin-top: 20px;
+    place-self: center;
+}

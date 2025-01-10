@@ -1,0 +1,11 @@
+[
+    { "id": 1, "name": "Apple Cider Donut Scented Candle", "category": "Candles", "price": 35, "quantity": 150, "description": "Fall-scented candle with apple, cinnamon, and cider scents." },
+    { "id": 2, "name": "Fresh Cotton Scented Candle", "category": "Candles", "price": 35, "quantity": 150, "description": "Refreshing candle with scents of fresh cotton and laundry." },
+    { "id": 3, "name": "Lavender Scented Candle", "category": "Candles", "price": 35, "quantity": 150, "description": "Light scented candle with hints of lavendar and vanilla." },
+    { "id": 4, "name": "Gold Bracelet", "category": "Accessories", "price": 70, "quantity": 150, "description": "Gold charmed jewelry - bracelet." },
+    { "id": 5, "name": "Silver Necklace", "category": "Accessories", "price": 50, "quantity": 150, "description": "Shiny silver jewelry - necklace." },
+    { "id": 6, "name": "Diamond Ring", "category": "Accessories", "price": 120, "quantity": 150, "description": "Sparkling diamond jewelry - promise ring." },
+    { "id": 7, "name": "Black Dress", "category": "Clothing", "price": 100, "quantity": 150, "description": "Mini black night-out dress." },
+    { "id": 8, "name": "Grey Jacket", "category": "Clothing", "price": 120, "quantity": 150, "description": "Grey zip-up athletic jacket." },
+    { "id": 9, "name": "Flare Yoga Pants", "category": "Clothing", "price": 55, "quantity": 150, "description": "Comfy athletic black flare yoga pants." }
+]
